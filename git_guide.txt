@@ -1,0 +1,39 @@
+Github Pages	:Html
+Gitbub Gist	:단일소스 및 간단메모
+
+config --global user.name
+config --global user.email 
+
+clone
+add	: reset 명령은 add에서 제거
+commit -m   :주석
+push           :upload web
+
+--소스코드의 수정 --
+1. 구성원이 아닌 경우 pr
+2, 구성원인경우
+    -checkout 	:수정사항무시
+    -commit --amend :되돌리기(커밋취소)
+ 	    -v   (vim 에서 수정후올림)
+--상태확인------------------
+status (스테이지확인)
+log  (커밋 로그확인)   :q 나가기
+
+-- 컷밋 되돌리기 -
+reset --hard   :push -f (강제푸시)
+        --mix  작업은유지하고 커밋은삭제
+--분기만들기 branch--
+branch		:분기확인
+branch testname	:분기점 만들기
+chekout testname 	:사용 분
+--마스터로 돌아간후
+merge  testname	:병합완료
+branch -d testname :분기 제거
+----
+원격저장소 :remote
+
+remote show testname  :원격저장소정보
+remote add adtesname	:저장소 만들기
+remote -v 저장소정보
+remote rename  이름바꾸기
+remot rm adtestname :제거
